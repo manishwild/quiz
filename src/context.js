@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { createContext, useContext,  useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 
 // in api category is used as number
 const table = {
@@ -26,12 +26,10 @@ const table = {
   Comics: 29,
   Gadgets: 30,
   JapaneseAnimeManga: 31,
-  CartoonAnimations:32,
+  CartoonAnimations: 32,
 }
 
 const API_ENDPOINT = 'https://opentdb.com/api.php?'
-
-
 
 // const tempUrl =
 //   'https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple'
@@ -114,7 +112,7 @@ const AppProvider = ({ children }) => {
 
   const submitHandler = (e) => {
     e.preventDefault()
-    const { amount, category, difficulty,type } = quiz
+    const { amount, category, difficulty, type } = quiz
     console.log(quiz)
     const url = `${API_ENDPOINT}amount=${amount}&difficulty=${difficulty}&category=${table[category]}&type=${type}`
     fetchQuestions(url)

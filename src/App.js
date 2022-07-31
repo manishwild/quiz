@@ -22,22 +22,20 @@ const App = () => {
     return <Loading />
   }
   const { question, incorrect_answers, correct_answer } = questions[index]
-  console.log(correct_answer)
+  // console.log(correct_answer)
   // const answers = [...incorrect_answers, correct_answer]
   let answers = [...incorrect_answers]
-  const tempIndex = Math.floor(Math.random() *4)
+  const tempIndex = Math.floor(Math.random() * 4)
   // console.log(tempIndex)
   if (tempIndex === 3) {
     answers.push(correct_answer)
-  }
-  else {
+  } else {
     answers.push(answers[tempIndex])
     answers[tempIndex] = correct_answer
   }
   return (
     <main>
       <Modal />
-      
       <section className="quiz">
         <h2>Quiz App</h2>
         <p className="correct-answers">

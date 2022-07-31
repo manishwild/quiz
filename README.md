@@ -1,3 +1,21 @@
+# The Quiz App
+
+
+## The Quiz App is to test your knowledge. Main propose is to search for different category and different level. Also, you can add the question from 10 to 50.
+
+## The Quiz App feature is you can a set a question and answer game and test your knowledge. I used ReactJS and contextApi to build this app.
+## Table of Contents:
+- HTML 5
+- CSS
+- JavaScript
+- ReactJS
+
+
+
+## Authors
+Manish khadgi Shahi
+
+[links](https://thedrinkdetails.netlify.app/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
